@@ -1,5 +1,5 @@
+const db = require('../db/db');
+
 exports.home = async (req, res) => {
-  res.json({
-    message: "OK!"
-  });
+  res.json(db.mainPage);
 }
