@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo npm install virtualenv
+cd /home/ec2-user/MovieApp
+virtualenv environment
+source environment/bin/activate
+sudo npm install

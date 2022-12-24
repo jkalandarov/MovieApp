@@ -6,12 +6,12 @@ require('dotenv').config();
 const routes = require('./routes/index');
 
 const app = express();
-app.use(logger('api'));
+// app.use(logger('api'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // router
-app.use('/api', routes);
+app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use(function (err, req, res, next) {
