@@ -40,7 +40,7 @@ jobs:
         id: deploy
         run: |
           aws deploy create-deployment \
-            --application-name movie-app \
-            --deployment-group-name AppDeploymentGroup \
+            --application-name code-deploy-pipeline \
+            --deployment-group-name deploy-to-ec2 \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
