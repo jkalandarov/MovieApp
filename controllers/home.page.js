@@ -5,5 +5,5 @@ exports.home = async (req, res) => {
 }
 
 exports.test = async (req, res) => {
-  res.status(200).send('Working! 👌');
+  res.status(200).send('Working! 👌✌');
 }
